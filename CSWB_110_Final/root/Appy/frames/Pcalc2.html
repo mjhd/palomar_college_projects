@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <style>
+  body { background: #fff; }
+  form { display: inline-block; padding: 20px; border-radius: 20px; border: double 5px #666; max-width: 60%; }
+  input { max-width: 100%; }
+	</style>
+</head>
+
+
+
+<body>
+<div>
+
+
+
+
+
+
+
+<div style="text-align: center;">
+<h3>Calculate any percentage of a number:</h3>
+<h5>(include integers only)</h5>
+<form style="background:#E00087; text-align: left;">
+<h2>This</h2>
+<input id="numbaa" type="text"><span>%</span>
+<h2>Of:</h2>
+<input id="numbab" type="text"><span>Number</span>
+<br>
+<input type="submit" onClick="mySubmita();">
+</form>
+</div>
+
+<script>
+  function mySubmita(){
+      var numa = document.getElementById('numbaa');
+      var numb = document.getElementById('numbab');
+	  var answura = numa.value * numb.value / 100;
+      alert(answura);	 
+  }
+</script>
+
+<div style="text-align: center;">
+<br><br>
+<h3>Rounded to two decimal places:</h3>
+<form style="background:#EBF500; text-align: left;">
+<h2>This</h2>
+<input id="numbac" type="text"><span>%</span>
+<h2>Of:</h2>
+<input id="numbad" type="text"><span>Number</span>
+<br>
+<input type="submit" onClick="mySubmitb();">
+</form>
+</div>
+
+<script>
+  function mySubmitb(){
+      var numc = document.getElementById('numbac');
+      var numd = document.getElementById('numbad');
+	  var answurb = numc.value * numd.value / 100;
+      alert(answurb.toFixed(2));	 
+  }
+</script>
+</div>
+
+
+</body>
+</html>

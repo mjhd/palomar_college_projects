@@ -1,0 +1,251 @@
+SQL PROBLEMS - BEGIN  COPY & PASTE
+
+--------------------------------------------------------------------------------------
+Problem 1.  Create a table named "Employee" with the 
+following column specifications:
+
+ 
+
+
+
+YOUR ANSWER HERE:
+
+CREATE TABLE Employee
+(
+	ssn varchar(11) primary key,
+	lastname varchar(40) not null,
+	firstname varchar(30) null,
+	department_code int not null,
+	annual_salary int null,
+	hire_date date not null
+	);
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+Problem 2.  Create a table named "Department" with 
+the following column specifications:
+
+
+
+
+YOUR ANSWER HERE:
+
+CREATE TABLE Department
+(
+	department_code int primary key,
+	department_name varchar(30) not null
+	);
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+Problem 3.  Code the Insert statements required to add the 
+following data to the Employee table.
+
+
+	Employee:
+	ssn: 111-22-3333
+	lastname: Smith
+	firstname: John
+	department_code: 234
+	annual_salary: $50,000
+	hire_date: 1999-10-15
+
+
+	Employee:
+	ssn: 222-33-4444
+	lastname: Jones
+	firstname: Mary
+	department_code: 234
+	annual_salary: $56,000
+	hire_date: 1998-01-02
+
+
+
+YOUR ANSWER HERE:
+
+INSERT INTO Employee
+values('111-22-3333', 'Smith', 'John',
+'234', '50000', '1999-10-15')
+;
+
+INSERT INTO Employee
+values('222-33-4444', 'Jones', 'Mary',
+'234', '56000', '1998-01-02')
+;
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+Problem 4.  Code the Insert statements required to add the 
+following data to the Department table.
+
+
+	Department:
+	department_code: 234
+	department_name: Information Services
+
+
+	Department:
+	department_code: 456
+	department_name: Systems Group
+
+
+	Department:
+	department_code: 657
+	department_name: Payroll
+
+
+
+YOUR ANSWER HERE:
+
+INSERT INTO Department
+values('234', 'Information Services')
+;
+
+INSERT INTO Department
+values('456', 'Systems Group')
+;
+
+INSERT INTO Department
+values('657', 'Payroll')
+;
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+Problem 5.  Display a list of Employee Names (lastname, firstname) and their hire date. 
+Sort the results by Last Name.
+
+
+
+
+YOUR ANSWER HERE:
+
+SELECT lastname, firstname, hire_date
+FROM Employee
+ORDER BY lastname;
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
+Problem 6.  Display the Average Salary of all the employees.
+
+
+
+
+YOUR ANSWER HERE:
+
+SELECT AVG(annual_salary) 
+FROM Employee;
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
+Problem 7.  Code a SQL Statement that would remove John Smith 
+from the database.   Do NOT use his SSN value to code this statement
+just use the name criteria.
+
+
+
+
+
+YOUR ANSWER HERE:
+
+DELETE FROM Employee
+WHERE lastname='Smith' 
+AND firstname='John'
+;
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
+Problem 8.  Code a SQL Statement that would raise everyone's salary by $1000.
+You should code a statement that would actually change the data in the table.
+
+
+
+
+
+YOUR ANSWER HERE:
+
+UPDATE Employee
+SET annual_salary=annual_salary + 1000;
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
+Problem 9.  Code a SQL Statement that would remove the Department table from the database.
+
+
+
+
+
+YOUR ANSWER HERE:
+
+DROP TABLE Department;
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+SQL PROBLEMS - END  COPY & PASTE

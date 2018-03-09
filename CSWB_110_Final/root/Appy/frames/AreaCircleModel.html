@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+body { background: #fff; }
+#innercirc {
+display: inline-block;
+text-align: left;
+margin-left: 10%;
+margin-top: 15%;
+}
+#contain_circle {
+border-radius: 50%;
+text-align: center; 
+margin: auto;
+}
+h3 { display:inline-block; }
+h2 { color:#000; }
+#circle_area { display:inline-block; }
+#circumference { display:inline-block; }
+body { color:#fff; }
+</style>
+
+</head>
+
+<body>
+
+
+
+<form>
+<h2>radius:</h2>
+<input type="text" id="radius" />
+<input type="button" value="get values" onClick="circleData();"/>
+</form>
+
+<div id="contain_circle">
+<div id="innercirc">
+<h3>Area=</h3>
+<div id="circle_area"></div>
+<br />
+<h3>Circumference=</h3>
+<div id="circumference"></div>
+</div>
+</div>
+
+<script type="text/javascript">
+var circleData = function(){
+var rad = document.getElementById('radius').value;
+var circArea = rad * rad * 3.14;
+var circCirc = rad * 2 * 3.14;
+document.getElementById('circle_area').innerHTML = circArea.toFixed(2);
+document.getElementById('circumference').innerHTML = circCirc.toFixed(2);
+document.getElementById('contain_circle').style.width = (rad * 2) + "0" + 'px';
+document.getElementById('contain_circle').style.height = (rad * 2) + "0" + 'px';
+document.getElementById('contain_circle').style.marginLeft = ((document.width / 2) - (rad + "0")) + 'px';
+document.getElementById('contain_circle').style.backgroundColor="#1F00FF";
+};
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+  <head>
+	<meta charset="utf-8">
+	<title>King Library</title>
+	<link rel="stylesheet" href="css/KingLib_2.css">
+	
+  </head>
+
+  <body>
+  
+	<header>
+	
+		<div><img src="images/KingLibLogo.jpg" /></div>
+		
+	</header>
+
+	<form action="assignment_2_add_patron.php" method="post" >
+		<h3>Please sign up</h3>
+	  <fieldset>
+		<legend>Your Info</legend>
+		<p>
+			<label for="first">First Name:</label>
+			<input type="text" name="first" id="first" />
+		</p>
+		<p>
+			<label for="last">Last Name:</label>
+			<input type="text" name="last" id="last" />
+		</p>		
+		<p>
+			<label for="email">Your Email:</label>
+			<input type="text" name="email" id="email" />
+		</p>
+		<p>
+			<label for="year">Your Birth Year:</label>
+			<input type="number" name="year" id="year" />
+		</p>
+	  </fieldset>
+	  
+	  <p>
+		<label for="city">Your City:</label>
+		<select name="city" id="city">
+			<option>-</option>
+			<optgroup label="Cities:">
+				<option>Chicago</option>
+				<option>Detroit</option>
+				<option>Toronto</option>
+			</optgroup>
+	  </select>
+	  </p>
+	  
+	  <p>
+		<input type="submit" value="Submit Information" />
+	  </p>
+	  
+	</form>
+
+</body>

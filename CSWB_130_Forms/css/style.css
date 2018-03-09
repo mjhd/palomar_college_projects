@@ -1,0 +1,41 @@
+* { margin: 0; padding: 0; }
+body { background: #000; }
+#main { background: #389eb5; color: #fcfe1a; max-width: 800px; margin: auto; }
+#main > h1 { margin-bottom: 20px; padding: 20px; text-align: center; font-size: 40px; border-bottom: dotted 2px #fff; }
+#items { padding: 10px; max-width: 650px; margin: auto; }
+#items > h2 { text-align: center; background: #666; padding: 7px; color: #fff; border: solid 3px #AAA; cursor: pointer; }
+.itemWrap { max-width: 500px; margin: auto; text-align: center; position: relative; left: -7px; }
+.delete { display: inline-block; width: 4%; padding: 0.5%; margin-right: 5px; text-align: center; color: #fff; border: solid 2px #fff; font-family: arial; font-weight: bold; background: #F00; border-radius: 50%; font-size: 16px; cursor: pointer; }
+.space { display: inline-block; width: 5%; margin: 0 5px 0 4px; }
+.list { background: #AAA; padding: 5px; position: relative; border-radius: 10px; margin-top: 45px; margin-bottom: 45px; }
+.list li { background: #fff; padding: 5px; padding-left: 15px; color: #000; border-bottom: solid 2px #333; list-style-type: none; outline: solid 1px #666; display: inline-block; width: 80%; text-align: left; }#items li input { float: right; margin-right: 10px; }
+.list p { position: absolute; bottom: 5px; right: 5%; color: #000; z-index: 10; }
+#more { padding: 1px; background: #F00; border-radius: 50%; height: 20px; width: 20px; display: inline-block; text-align: center; margin-left: 5px; font-family: arial; font-weight: bold; border: solid 2px #fff; font-size: 19px; color: #fff; cursor: pointer; }
+.list > aside{ width: 0; height: 0; border-bottom: 50px solid #AAA; border-left: 30px solid transparent; border-right: 30px solid transparent; position: absolute; top: -47px; left: 45%; z-index: 5; }
+
+
+#calculate { padding: 10px; max-width: 650px; margin: auto; }
+#calculate > div { float: left; width: 44%; padding: 2%; text-align: center; margin: 1%; background: #AAA; border-radius: 10px; }
+#tip { width: 50%; float: left; clear: both; }
+#calculate > div > h3 { text-align: left; float: left; }
+
+
+#calc { width: 40%; float: right; padding: 5px; color: #fff; border-radius: 6px; background: #666; border: none; }
+#showMe { float: left; margin: 0 5%; background: #fff; padding: 2px; border-radius: 5px; color: #000; min-width: 35px; }
+#calculate input { margin-top: 20px; cursor: pointer; }
+#finalTip { min-height: 50px; background: #FFF; color: #000; font-size: 40px; font-weight: bold; border-radius: 10px; }
+
+
+@media (max-width: 600px) {
+#calculate > div { width: 94%; }
+#tip { width: 100%; }
+#calc { width: 100%; }
+}
+
+@media (min-width: 500px) {
+.itemWrap { left: -20px; }
+}
+
+@media (max-width: 420px) {
+.delete { font-size: 12px }
+}

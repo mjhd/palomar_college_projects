@@ -1,0 +1,134 @@
+Problem 1. Show the average position that an author appears on a book.
+List the author using the author_id column.
+
+
+
+
+
+
+YOUR ANSWER HERE:
+
+
+SELECT author.lastname, author.firstname, AVG(bookauthor.author_order)
+FROM author
+JOIN bookauthor
+USING (author_id)
+GROUP BY lastname, firstname;
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
+Problem 2. List each author (by lastname and firstname) and the number of books 
+that the author has written.
+
+
+
+
+
+
+YOUR ANSWER HERE:
+
+
+SELECT author.lastname, author.firstname, COUNT(book.title)
+FROM author
+JOIN bookauthor
+USING (author_id)
+JOIN book
+USING (isbn)
+GROUP BY lastname, firstname;
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+Problem 3. Display a list of the authors and the city they live in,
+as long as they live in one of the cities that a publisher is based in. 
+
+Use a Subquery instead of a JOIN. 
+
+
+
+
+
+
+
+YOUR ANSWER HERE:
+
+
+SELECT author.lastname, author.firstname, author.city
+FROM author, publisher
+WHERE author.city = publisher.city;
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+Problem 4. Show a list of all authors and the books they have 
+written.  However, only display a book if it has the letters 'oo' contained in 
+its title.
+
+Sort in Lastname, firstname order.
+
+
+
+
+
+
+YOUR ANSWER HERE:
+
+
+SELECT author.lastname, author.firstname, book.title
+FROM author, book
+WHERE book.title LIKE '%oo%'
+ORDER by lastname, firstname;
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+Problem 5. List the publisher name and title for all books, but only if 
+they are published by the publisher whose name begins with 'Bin'.  
+
+Sort by publisher name and title.
+
+
+
+
+
+YOUR ANSWER HERE:
+
+
+SELECT publisher.name, book.title
+FROM publisher, book
+WHERE publisher.name LIKE 'Bin%'
+ORDER by publisher.name, book.title;
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
+
+SQL PROBLEMS - END  COPY & PASTE

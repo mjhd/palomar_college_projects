@@ -1,0 +1,235 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Houser_Matthew_Midterm</title>
+	<meta name="viewport" content="width=device-width initial-scale=1.0; maximum-scale=1.0;">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/TC_72x72.png" /> 
+    <link rel="apple-touch-icon" sizes="144x144" href="img/TC_144x144.png" /> 
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fittext.js"></script>
+	
+</head>
+
+<body>
+
+<section id="bigwrap">
+
+<header>
+<hgroup>
+<h1>Gourmet</h1>
+<h1>Pizzeria</h1>
+<h5>Click to go home</h5>
+</hgroup>
+<img src="img/pizza.svg" />
+</header>
+
+<section class="wrapper home">
+
+<div class="slide">
+
+<h2><a href="pg/order.html">Order now</a></h2>
+
+<svg height="100%" width="100%">
+  <line x1="0" y1="50%" x2="100%" y2="50%" style="stroke:#000;stroke-width:2" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</div>
+
+<div class="slide">
+
+<h2><a href="tel:+17603214696">Call us</a></h2>
+
+
+<svg height="100%" width="100%">
+  <line x1="0" y1="50%" x2="100%" y2="50%" style="stroke:#000;stroke-width:2" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</div>
+
+<div class="slide">
+
+<h2><a href="pg/locate.html">Locate us</a></h2>
+
+<svg height="100%" width="100%">
+  <line x1="0" y1="50%" x2="100%" y2="50%" style="stroke:#000;stroke-width:2" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</div>
+
+
+</section>
+
+
+
+<section class="wrapper order" style="display: none;">
+
+<h2 class="back"><a href="../index.html">&laquo; Back</a></h2>
+
+<div class="slide">
+
+<h2><a href="" class="">Your info</a>
+<div>
+<form>
+  <fieldset>
+    <legend>Please enter your info below</legend>
+    <p>
+	  <label for="name" >Your Name*</label>
+      <input type="text" id="name" />  
+    </p>
+    <p>
+	  <label for="number">Phone number*</label>
+      <input type="text" id="number" />
+    </p>   
+	  <span class='checkbox delivery'><input type="checkbox" id="delivery" /><label for="delivery">Is this for delivery?</label></span>
+	<p class="address">
+	  <label for="address">Your address</label>
+      <input type="text" id="address" />
+    </p>
+	<p class="required">* Required</p>
+  </fieldset>
+</form>
+</div>
+</h2>
+
+<svg height="100%" width="100%">
+  <line x1="0" y1="50%" x2="100%" y2="50%" style="stroke:#000;stroke-width:2" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</div>
+
+<div class="slide">
+
+<h2><a href="" class="">Pizza type</a>
+<div>
+<form>
+  <fieldset>
+    <legend>Please enter your info below</legend>
+    <p>
+        <label for="size">Pizza size</label>
+        <select id="size">
+            <option value = "s">Small $8.00</option>
+            <option value = "m">Medium $10.00</option>
+            <option value = "l">Large $12.00</option>
+        </select>
+    </p>
+    <p class="toppings">
+	  <legend>Toppings <span>50&cent; each</span></legend>
+      <span class='checkbox'><input type="checkbox" id="sausage" value = "Sausage" /><label for="sausage">Sausage</label></span>
+	  <br />
+	  <span class='checkbox'><input type="checkbox" id="pepperoni" value="Pepperoni" /><label for="pepperoni">Pepperoni</label></span>
+	  <br />
+	  <span class='checkbox'><input type="checkbox" id="mushrooms" value="Mushrooms" /><label for="mushrooms">Mushrooms</label></span>
+	  <br />
+	  <span class='checkbox'><input type="checkbox" id="peppers" value="Bell Peppers" /><label for="peppers">Bell Peppers</label></span>
+	  
+    </p>
+  </fieldset>
+</form>
+</div>
+</h2>
+
+
+<svg height="100%" width="100%">
+  <line x1="0" y1="50%" x2="100%" y2="50%" style="stroke:#000;stroke-width:2" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</div>
+
+<div class="slide">
+
+<h2><a href="" class="">Number of pizzas</a>
+<div>
+    <p>
+	<form>
+		<fieldset>
+		<legend>Number of pizzas</legend>
+        <select id="quantity">
+            <option value = "1">1</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+			<option value = "5">5</option>
+        </select>
+		</fieldset>
+	</form>
+    </p>
+</div>
+</h2>
+<svg height="100%" width="100%">
+  <line x1="0" y1="50%" x2="100%" y2="50%" style="stroke:#000;stroke-width:2" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+</div>
+
+<h2><a href="">Get total</a></h2>
+
+
+</section>
+
+
+<section class="wrapper locate" style="display: none;">
+
+<div class="slide">
+
+<h2 class="back"><a href="../index.html">&laquo; Back</a></h2>
+
+<h3> 1150 W. Mission rd. San Marcos, CA </h3>
+
+</div>
+
+<div class="slide">
+
+<iframe src="https://mapsengine.google.com/map/u/1/embed?mid=zzKdOSYYKvps.kYxEYaEnY9vo" width="640" height="480"></iframe>
+
+</div>
+
+</section>
+
+
+<section class="wrapper total" style="display: none;">
+
+<h2 class="back"><a href="../index.html">&laquo; Back</a></h2>
+
+<h1>Your order:</h1>
+
+<section class="totalWrap">
+
+<div id="info">
+</div>
+
+<div id="pizza">
+</div>
+
+</section>
+
+<h1>Total:</h1>
+
+<section class="totalWrap">
+
+<div id="total">
+</div>
+
+</section>
+
+<h2><a href="" id="submit">Submit order</a></h2>
+
+</section>
+
+
+</section>
+
+<script src="js/functions.js"></script>
+
+</body>
+</html>

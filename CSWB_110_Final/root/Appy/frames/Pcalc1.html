@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <style>
+  body { background: #fff; }
+  form { display: inline-block; padding: 20px; border-radius: 20px; border: double 5px #666; max-width: 60%; }
+  input { max-width: 100%; }
+	</style>
+</head>
+
+
+
+<body>
+<div>
+<div style="text-align: center;">
+<h3>Calculate what percentage a number is of another number:</h3>
+<h5>(include integers only)</h5>
+
+
+<form style="background:#37E700; text-align: left;">
+<h2>This</h2>
+<input id="numba1" type="text"><span>Amount</span>
+<h2>Of:</h2>
+<input id="numba2" type="text"><span>Total</span>
+<br>
+<input type="submit" onClick="mySubmit();">
+</form>
+</div>
+
+<script>
+  function mySubmit(){
+      var num1 = document.getElementById('numba1');
+      var num2 = document.getElementById('numba2');
+	  var answur = num1.value / num2.value * 100;
+      alert(answur + "%");	 
+  }
+</script>
+
+<div style="text-align: center;">
+<br><br>
+<h3>Rounded to two decimal places:</h3>
+<form style="background:#0075D1; text-align: left;">
+<h2>This</h2>
+<input id="numba3" type="text"><span>Amount</span>
+<h2>Of:</h2>
+<input id="numba4" type="text"><span>Total</span>
+<br>
+<input type="submit" onClick="mySubmit2();">
+</form>
+</div>
+
+<script>
+  function mySubmit2(){
+      var num3 = document.getElementById('numba3');
+      var num4 = document.getElementById('numba4');
+	  var answurb = num3.value / num4.value * 100;
+      alert(answurb.toFixed(2) + "%");	 
+  }
+</script>
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+</html>

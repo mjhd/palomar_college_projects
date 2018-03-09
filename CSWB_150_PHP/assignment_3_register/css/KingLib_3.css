@@ -1,0 +1,19 @@
+body { background: #f0e68c; }
+form { background: #e6e6fa; }
+header  img, form, .response { display: block; width: 100%; max-width: 800px; margin: auto; }
+fieldset { margin: 5px; }
+
+label { display: block; }
+input { width: 100%; max-width: 200px; }
+label[for="email"] + input { max-width: 325px; }
+label[for="year"] + input { max-width: 85px; }
+input[type="submit"] { font-weight: bold; }
+
+.response { background: #e6e6fa; padding: 10px 0; margin-top: 30px; } 
+.response p { margin: 10px; }
+
+.response table { margin: 5px; }
+tr:nth-child(odd) { background: #ffffcc; }
+tr:nth-child(even) { background: #fff; }
+tr:nth-child(1) { background: transparent; }
+th { padding: 2px; }

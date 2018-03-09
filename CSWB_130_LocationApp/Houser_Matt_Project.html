@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<script  src="js/jquery-1.10.2.js"></script>
+	<script  src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>	
+	<script type="text/javascript" src="js/mapfunctions.js"></script>
+	<script type="text/javascript" src="js/friendfunctions.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body onload="showlocation()">
+	<section id="wrapp">
+	<header>
+	<h1>whereUat?</h1>
+	<section id="headwrap">
+	<aside class="messageBox"></aside>
+	<form class="controls">
+	<input type="button" class="reorient" value="Reorient">
+	<input type="button" class="change" />
+	<select class="friend">
+	</select>
+	<input type="button" class="new" value="Friends">
+	</form>
+	</section>
+	</header>
+	
+	<section id="friends">
+	<aside class="messageBox"></aside>
+	<section class="friendList">
+	<ul id="friendList"></ul>
+	</section>
+	<form class="addFriend" _lpchecked="1">
+	<h1>Add friends</h1>
+	<input type="text" id="friendName"><span>Username:</span>
+	<input type="button" class="add" value="Send Request">
+	</form>
+	
+	</section>
+	 <section id="map-canvas"></section>
+	</section>
+	
+	<script type="text/javascript">
+	function dynamicHeader(){
+	if ($('header h1').css('background-color') == 'rgb(255, 255, 255)') { 
+		var dynamicLeft; 
+		if($(document).width() > 400) { dynamicLeft = ($(document).width() - $('header h1').width())/2; } 
+		if($(document).width() <= 400) { dynamicLeft = ($(document).width() - $('header h1').width())/2.5; } 
+		$('header h1').css('left', dynamicLeft); 
+		$('.messageBox').css({ 'left': (dynamicLeft - 30), 'right': 'initial' });
+		$('header .messageBox').css('top', '150px');
+	  }
+	  if ($('header h1').css('background-color') != 'rgb(255, 255, 255)') { $('header h1').css('left', ''); $('.messageBox').css({ 'left': '', 'right': '' }); $('header .messageBox').css('top', ''); }
+	}
+	function friendsHeight(){
+	var position = $('#friends').position();
+	var friendHeight = $(document).height() - position.top - 20;
+	$('#friends').css('height', friendHeight);
+	}
+	
+	$(window).on('load', function(){ dynamicHeader(); });
+	$(window).resize(dynamicHeader);
+	$(window).resize(friendsHeight);
+	</script>
+	
+  </body>
+</html>

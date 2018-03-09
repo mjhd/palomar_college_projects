@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- License Agreement at http://iconmonstr.com/license/ -->
+
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<path id="checkbox-2-icon" d="M124.753,224.099l28.758-26.586c33.639,16.278,54.975,28.663,92.784,55.614
+	c71.078-80.663,118.045-121.585,205.348-175.902L461,98.75c-71.994,62.828-124.724,132.807-200.65,268.968
+	C213.522,312.564,182.268,277.409,124.753,224.099z M361,259.191v135.584H91v-270h241.534c16.649-13.833,33.921-26.877,52.809-40H51
+	v350h350V204.537C387.718,221.137,374.525,239.165,361,259.191z"/>
+</svg>

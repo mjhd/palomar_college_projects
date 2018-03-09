@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<title>Grade tracker</title>
+<style>
+html { background: #ff0; }
+div { text-align: center; background: #006EFA; padding: 50px; width: 800px; margin: 10% auto; border: solid 5px #000; border-radius: 140px; background-image: url(http://www.mjhdesigner.com/progressivefittest/wp-content/stipe2.png); background-size: 120px; }h4 { background: #999; display: inline; padding: 5px; padding-right: 50px; border-radius: 10px 0 0 10px; border: solid 2px #fff; border-right: solid 2px #333; position: relative; left: 4px; }
+h3 { padding: 10px; background: #333; color: #fff; border-radius: 10px; display: inline; }h3 { padding: 10px; background: #333; color: #fff; border-radius: 10px; display: inline; border: solid 4px #fff; }
+</style>
+</head>
+<body>
+
+<script type="text/javascript">
+var arrayRay = [
+"Ability is nothing without opportunity - Napoleon Bonaparte", 
+"Nothing happens unless first we dream - Carl Sandburg",
+"Believe you can and you're halfway there - Theodore Roosevelt",
+"A place for everything, everything in its place - Benjamin Franklin",
+"Don't let the fear of striking out hold you back - Babe Ruth",
+"We can't help everyone, but everyone can help someone - Ronald Reagan",
+"With self-discipline most anything is possible - Theodore Roosevelt"
+];
+
+var dateRay = [
+'Sunday',
+'Monday',
+'Tuesday',
+'Wednesday',
+'Thursday',
+'Friday',
+'Saturday'
+];
+
+var day = new Date();
+var today = day.getDay();
+
+document.write("<div><h4>Today is</h4><h3>" + dateRay[today] + "</h3><br /><br /><br /><br />");
+document.write("<h4>Today's quote:</h4><h3>" + arrayRay[today] + "</h3></div>");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+body { background: #f0e68c; }
+header  img, form, .response { display: block; width: 100%; max-width: 800px; margin: auto; }
+fieldset { margin: 0; }
+
+label { display: block; }
+input { width: 100%; max-width: 200px }
+label[for="email"] + input { max-width: 325px; }
+label[for="year"] + input { max-width: 85px; }
+input[type="submit"] { font-weight: bold; }

@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width">
+
+<link rel="stylesheet" href="css/style.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="../js/jquery.fittext.js"></script>
+</head>
+
+<body>
+
+<nav>
+<div><span id="mainhead">&there4; Welcome to Appy</span></div>
+</nav>
+
+<img id="shield" src="../img/FrontEnd.png">
+
+
+<div id="wrap">
+<div id="screenframe"></div>
+<div class="row">
+
+<div class="thirds marginal" onClick="javascript:window.location.href='../index.html'"><span><h1>Back to The Framework Factory</h1><img src="../img/2577.png" style="width: 60%; position: absolute; max-width: 150px; right: 2%; bottom: 2%;"></span></div><div class="thirds marginal" id="gimme" onClick="buildFrame(),greetMe()"><span><h1>Greet me please!!</h1></span></div><div class="thirds" onClick="buildFrame(),animation()"><span><h1>Neat yet pointless CSS3 animation</h1></span></div></div>
+
+<div class="row">
+<div class="halves marginal" onClick="buildFrame(),viscalc()"><span><h1>Visual area calc</h1></span></div><div class="halves" onClick="buildFrame(),circlecalc()"><span><h1>Visual area calc circle</h1></span></div></div>
+
+<div class="row">
+<div class="two_one marginal" onClick="buildFrame(),percentOf()"><span><h1>Givin % of any number</h1></span></div><div class="one_two" onClick="buildFrame(),percentInto()"><span><h1>% of any TWO numbers</h1></span></div></div>
+</div>
+
+
+<iframe src="form.html" id="framer" ></iframe>
+
+<script type="text/javascript">
+var margin = $(window).width() * 0.018;
+$('.thirds').css('margin-bottom', margin);
+$('.one_two').css('margin-bottom', margin);
+$('.two_one').css('margin-bottom', margin);
+$('.halves').css('margin-bottom', margin);
+
+$(window).resize(function() {
+var margin = $(window).width() * 0.018;
+$('.thirds').css('margin-bottom', margin);
+$('.one_two').css('margin-bottom', margin);
+$('.two_one').css('margin-bottom', margin);
+$('.halves').css('margin-bottom', margin);
+});
+</script>
+
+
+<script type="text/javascript">
+function buildFrame(){
+document.getElementById('screenframe').innerHTML = "<img src='img/screen.png'><iframe id='framecontent'>";
+
+var ss = document.createElement("link");
+ss.type = "text/css";
+ss.rel = "stylesheet";
+ss.href = "css/dynamicStyles.css";
+document.getElementsByTagName("head")[0].appendChild(ss);
+
+
+var ans = $("#gimme").attr("onClick");
+console.log(ans);
+
+};
+</script>
+
+
+<!-- Scripts for iFrame updates -->
+<script type="text/javascript">
+
+function greetMe(){
+document.getElementById('framecontent').setAttribute("src","frames/NameGreetOnly.html");
+window.scrollTo(0,0);
+};
+
+function animation(){
+document.getElementById('framecontent').setAttribute("src","frames/animation/index.html");
+window.scrollTo(0,0);
+};
+
+function viscalc(){
+document.getElementById('framecontent').setAttribute("src","frames/AreaModel.html");
+window.scrollTo(0,0);
+};
+
+function circlecalc(){
+document.getElementById('framecontent').setAttribute("src","frames/AreaCircleModel.html");
+window.scrollTo(0,0);
+};
+
+function percentOf(){
+document.getElementById('framecontent').setAttribute("src","frames/Pcalc2.html");
+window.scrollTo(0,0);
+};
+
+function percentInto(){
+document.getElementById('framecontent').setAttribute("src","frames/Pcalc1.html");
+window.scrollTo(0,0);
+};
+
+</script>
+<script type="text/javascript">
+		$("#mainhead").fitText(1.0, { minFontSize: '12px', maxFontSize: '50px' });
+	</script>
+</body>
+</html>

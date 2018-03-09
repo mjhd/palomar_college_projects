@@ -1,0 +1,39 @@
+* { margin: 0; padding: 0; }
+body { background: #222; }
+header { padding: 3%; padding-left: 18%; margin-bottom: 20px; color: #fff; background: #000; min-height: 50px; border-bottom: solid 2px #444; }
+.add { background: transparent; background-image: url(../img/plus.svg); background-size: 100%; border-radius: 50%; 
+	cursor: pointer; width: 35px; height: 35px; }
+.todoList {  list-style: none; padding: 10px; background: #B0C5BE; border-radius: 20px; }
+.mainWrap { width:90%; max-width: 900px; margin: auto; text-align: center;}
+.todoList li { text-align: left; margin: 10px; margin-top: 15px; position: relative; border: dashed 1px #fff; padding: 5px; }
+.todoList li span:nth-child(5) { position: absolute; right: -10px; top: -10px; margin: 0; }
+.todoList li span:nth-child(3) { background: #999; padding: 5px; border-radius: 7px; color: #f00; font-weight: bold; }
+.todoList li span:nth-child(3):before { content: 'Priority '; color: #000; font-weight: normal; }
+.todoList li span:nth-child(4) { margin-top: 10px; display: inline-block; background: #fff; padding: 5px; border-radius: 7px; }
+.todoList li span, .todoList li select, .todoList li input { margin-right: 10px; }
+input, textarea { outline: none; }
+.input input:nth-of-type(3) { width: 25px; height: 25px; position: relative; top: 4px; }
+.input { margin: 10px auto; background: #999; padding: 10px; border: double 3px #000; border-radius: 20px; }
+.input input:nth-of-type(1) { width: 10%; margin-right: 2%; height: 25px; }
+.input textarea { width: 65%; height: 50px; margin: 10px 2% 10px 0; border-radius: 15px; border: none; 
+	resize: none; padding: 15px 10px; }
+.input *:not(textarea) { position: relative; top: -40px; }
+.input h3 { top: 0; }
+
+.todo input { background: transparent; position: relative; background-image: url(../img/checkbox.svg); background-size: 120%; 
+	background-position: center; border: none; width: 40px; height: 35px; top: 12px; left: -11px; cursor: pointer; }
+.kill { display: inline-block; background: #000; background-image: url(../img/x.svg); background-size: 100%; 
+	border-radius: 50%; cursor: pointer; width: 30px; height: 30px; }
+
+@media only screen and (max-width: 940px) {
+.input textarea { width: 55%; }
+}
+
+
+@media only screen and (max-width: 650px) {
+header { text-align: center; padding-left: 3%; }
+.input textarea { width: 90%; margin-right: 0; }
+.input *:not(textarea) { top: 0; }
+.input span { display: block; margin-top: 15px; }
+.input input:nth-of-type(1) { width: 50px; margin-right: 0; }
+}

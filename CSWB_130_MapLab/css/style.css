@@ -1,0 +1,71 @@
+body { margin: 0; background: #999; }
+header { padding: 20px; text-align: center; background: #ff8113; border-bottom: solid 3px #000; margin-bottom: 15px; }
+header h2 { margin-right: 70px; padding-left: 35px; }
+header img { height: 80px; position: absolute; top: 10px; right: 10px; }
+body > h4 { width: 90%; margin: auto; max-width: 900px; padding-left: 3%; margin-bottom: 13px; }
+body > h4 > span { background: #fff; padding: 5px; border-radius: 10px; border: solid 1px #000; }
+#wrap { width: 95%; max-width: 900px; margin: auto; }
+#map { position: relative; }
+section.mapWrap { display: inline-block; margin: 0; }
+.map { width: 100%; position: absolute; top: 0; overflow: hidden; background: #fff; border: solid 2px #000; }
+img.map  { position: relative; border: none; }
+div.map { padding: 2%; width: 96%; border-radius: 20px; }
+section.map { border-radius: 20px; }
+.location > span { font-size: 16px; top: 10%; }
+
+
+.location { position: absolute; z-index: 2; height: 12%; min-height: 40px; background: url('../img/arrw.svg'); background-size: 100%; cursor: pointer;
+  behavior:url(-ms-transform.htc);  
+  -moz-transform:rotate(90deg);  
+  -webkit-transform:rotate(90deg);  
+  -o-transform:rotate(90deg);  
+  -ms-transform:rotate(90deg);  
+}
+
+.location > span { display: block; position: relative; color: #f00; font-weight: bold; left: -75%; behavior: url(-ms-transform.htc);
+-moz-transform: rotate(270deg); 
+-webkit-transform: rotate(270deg); 
+-o-transform: rotate(270deg); 
+-ms-transform: rotate(270deg); 
+ }
+
+
+#SM { top: 66%; left: 47%; }
+
+#CP { top: 14%; left: 25%; }
+
+#Pa { top: 40%; left: 63%; }
+
+#Fb { top: 28%; left: 44%; }
+
+#Es { top: 71%; left: 60%; }
+
+.oneLine { margin-left: 20px; margin-top: 15px; }
+
+#mappy { width: 65%; height: 400px; float: left; border: solid 1px #000; }
+#panel { width: 30%; float: right; }
+aside#back { background: url(../img/arrow.svg); background-size: auto 100%; background-repeat: no-repeat; padding-left: 77px; }
+#back, #mapShow, #mapHide { display: inline-block; float: left; padding: 25px; border: solid 2px #000; border-radius: 20px; margin: 0 20px 20px 0; cursor: pointer; font-weight: bold; }
+.adp-directions { margin: auto; }
+.mapOn td[jsvalues=".innerHTML:format(instructions)"] { word-wrap: break-word; max-width: 100px; }
+table.adp-directions { width: 100%; }
+@media only screen and (max-width: 800px) {
+#mappy { width: 100%; }
+#panel { width: 100%; }
+.location > span { font-size: 14px; }
+td[jsvalues=".innerHTML:format(instructions)"] { word-wrap: initial; max-width: none; }
+}
+
+@media only screen and (max-width: 600px) {
+header h2 { margin-right: 0; margin-bottom: 0; padding-left: 0px; }
+header img { position: relative; top: 0; right: 0; margin-bottom: -10px; }
+.location > span { font-size: 12px; }
+#mappy { max-height: 315px; }
+}
+@media only screen and (max-width: 400px) {
+.location > span { font-size: 10px; }
+#SM { top: 63%; left: 46%; }
+#Es { top: 67%; left: 61%; }
+section.map { width: 96%; padding: 1%; }
+.location > span { font-size: 10px; }
+}

@@ -1,0 +1,75 @@
+body { background: #f0e68c; margin: 0; padding: 0; }
+form { background: #e6e6fa; display: inline-block; padding: 5px; }
+fieldset { margin: 5px; }
+h1 { font-size: 26px; }
+body > div > div { display: inline-block;  margin: 10px; padding: 5px; background: #e6e6fa; }
+
+label { display: block; }
+input { width: 100%; max-width: 200px; }
+label[for="email"] + input { max-width: 325px; }
+label[for="year"] + input { max-width: 85px; }
+input[type="submit"] { font-weight: bold; }
+
+.response { background: #e6e6fa; padding: 10px 0; margin-top: 30px; } 
+.response p { margin: 10px; }
+
+.response table { margin: 5px; }
+tr:nth-child(odd) { background: #ffffcc; }
+tr:nth-child(even) { background: #fff; }
+tr:nth-child(1) { background: transparent; }
+th { padding: 2px; }
+
+form.clear { background: transparent; }
+form.clear label { display: inline; float: left; margin-top: 5px; }
+form.clear input { float: right; width: 110px; margin-top: 5px; }
+form.clear input[type='submit'] { float:left; width: 60px; margin-top: 15px; }
+
+p.new { width: 320px; overflow: hidden; }
+p.new label { float: left; font-size: 16px; }
+p.new input { float: left; width: 90px; margin-right: 5px; }
+
+	#featuredtitle
+	{
+		position: absolute;
+		top: 85px;
+		left: 0px;
+		width: 350px;
+		height: 300px;
+		padding: 10px;
+		background-color: #ADD8E6;
+	}
+	
+	#stafflist
+	{
+		position: absolute;
+		top: 85px;
+		left: 350px;
+		width: 430px;
+		height: 300px;
+		padding: 10px;
+		background-color: #E6E6FA;
+	}
+
+	#logon
+	{
+		position: absolute;
+		top: 385px;
+		left: 350px;
+		width: 430px;
+		height: 200px;
+		padding: 10px;
+		background-color: #ADD8E6;
+	}
+	
+	#logon a { float: right; margin-top: 13px; }
+	
+	#findtitle
+	{
+		position: absolute;
+		top: 385px;
+		left: 0px;
+		width: 350px;
+		height: 200px;
+		padding: 10px;
+		background-color: #E6E6FA;
+	}

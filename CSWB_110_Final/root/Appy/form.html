@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>The form!</title>
+<style>
+#submit, #reset { margin-top: 15px; padding: 7px; font-weight: bold; }
+h3 { margin: 0; padding-top: 10px; }
+p { margin: 0; padding-bottom: 15px; }
+@media (min-width: 355px) {
+body { text-align: center }
+}
+</style>
+</head>
+<body>
+<h3>Submit some info!</h3>
+<p>fields marked * are required</p>
+<form method="post" action="scripts/MyScript.php">
+<fieldset>
+<legend>Your Name</legend>
+<label>First Name:</label>
+<input type="text" size="12" maxlength="22" name="Fname" placeholder="First name" autofocus required>*<br />
+<label>Last Name:</label>
+<input type="text" size="12" maxlength="36" name="Lname" placeholder="Last name" required>*
+</fieldset>
+<fieldset>
+<legend>Gender</legend>
+<label>Male:</label><input type="radio" value="Male" name="gender"><br />
+<label>Female:</label><input type="radio" value="Female" name="gender">
+</fieldset>
+<fieldset>
+<legend>Your favorite food:</legend>
+Steak:<input type="checkbox" value="Steak" name="food[]"><br />
+Pizza:<input type="checkbox" value="Pizza" name="food[]"><br />
+Chicken:<input type="checkbox" value="Chicken" name="food[]"><br />
+</fieldset>
+<br /><input type="text" name="quote" placeholder="Enter your favorite quote!" wrap="physical" required>*<br /><br />
+<fieldset>
+<legend>Level of Education:</legend>
+<select name="education">
+<option value="Jr.High">Jr.High</option>
+<option value="HighSchool">HighSchool</option>
+<option value="College">College</option></select>
+</fieldset>
+<fieldset>
+<legend>Favorite time of day:</legend>
+<select name="TofD" size="3">
+<option value="Morning">Morning</option>
+<option value="Day">Day</option>
+<option value="Night">Night</option></select><br />
+</fieldset>
+<input id="reset" type="reset" value="reset form">
+<input id="submit" type="submit" value="submit" name="submit">
+</form>
+</body>
+</html>

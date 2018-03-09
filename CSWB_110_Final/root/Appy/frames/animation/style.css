@@ -1,0 +1,31 @@
+ html { height:90%; background: #9844C7; overflow:hidden; }
+  body { height: 100%; background: url('img/island.png') no-repeat; 
+  background-size: 65%; }
+  .bubble { position: absolute; left: 60%; -webkit-animation: 
+ bubble-float 2s ease-out infinite; }
+ #wrapper { margin-top: 20px; }
+  img:not([src="img/bubble.png"]) { position: absolute; left: 35%; 
+  top: 50%; -webkit-animation: bird-fly 2s ease-out infinite;}
+  
+  
+  
+  
+  
+  /*  KEYFRAMES  */
+  @-webkit-keyframes bubble-float {
+  0% { -webkit-transform: translateY(0); }
+  50% { -webkit-transform: translateY(-10px); }
+  100% { -webkit-transform: translateY(0px); }
+  }
+  
+  
+  @-webkit-keyframes bird-fly {
+  25% { -webkit-transform: translate(-20px, -10px); }
+  30% { -webkit-transform: translate(-25px, -10px); }
+  35% { -webkit-transform: translate(-27px, -10px); }
+  50% { -webkit-transform: translate(-40px, -5px); }
+  55% { -webkit-transform: translate(-38px, -5px); }
+  70% { -webkit-transform: translate(10px, -10px); }
+  85% { -webkit-transform: translate(5px, 5px); }
+  90% { -webkit-transform: translate(2px, 2px); }
+  }
